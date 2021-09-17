@@ -1,0 +1,111 @@
+.home_page {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.home_page h3 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: darkblue;
+  letter-spacing: 3;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.home_page h3:hover a {
+  color: crimson;
+}
+
+.home_page h3 a small{
+  font-size: 15px;
+}
+
+.home_blogs{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: 10px;
+  margin-bottom: 15px;
+}
+
+.header {
+  margin-top: 60px;
+}
+
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lora", serif;
+  color: #444;
+}
+
+.headerTitleSm {
+  position: absolute;
+  top: 18%;
+  font-size: 20px;
+}
+
+.headerTitleLg {
+  position: absolute;
+  top: 20%;
+  font-size: 100px;
+}
+
+.headerImg{
+    width: 100%;
+    height: 450px;
+    margin-top: 80px;
+    object-fit: cover;
+}
+
+/* ---------- Header Search -------- */
+.header .search_form{
+  position: relative;
+}
+.header .search_form #search{
+  background: #fafafa;
+  border: 1px solid #ddd;
+  min-width: 250px;
+  width: 100%;
+  outline: none;
+  text-indent: 5px;
+  border-radius: 3px;
+}
+.header .search_form .search_icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  pointer-events: none;
+}
+.header .search_form .search_icon .material-icons{
+  font-size: 14px;
+  transform: translateY(3px);
+}
+.header .search_form .close_search{
+  position: absolute;
+  top: 0;
+  right: 5px;
+  cursor: pointer;
+  font-weight: 900;
+  color: rgb(95, 68, 73);
+}
+.header .search_form .users{
+  position: absolute;
+  width: 100%;
+  min-width: 250px;
+  background: #fafafa;
+  max-height: calc(100vh - 150px);
+  overflow: auto;
+  margin-top: 3px;
+}
+.header .search_form .loading{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  transform: translateY(-50%);
+}
